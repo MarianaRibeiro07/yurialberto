@@ -1,0 +1,59 @@
+.container {
+    display: flex;    
+    /* O dispaly flex é usado para organizar os elementos lado a lado, em linha */
+    flex-wrap: wrap; 
+    /* Faz os itens quebrarem para a proxima linha, qnd os elementos nao couberem na tela */
+
+    justify-content: space-between;
+    /* Distribui os itens e deixa espaço igual entre eles */
+
+    padding: 20px;  
+    /* Espaçamento interno em todos os lados das divs (filhos) */
+
+    max-width: 1200px;
+    /* Coloca o container ocupando toda a tela(define), para os itens poderem se espalharam */
+
+    margin: 0 auto; 
+    /* Centralize os itens do conteiner horizontalemte (margem auto) (o 0, é a margem do topo*/
+
+}
+.fotos{
+    width: 30%;
+    /* Cada foto ocupa ate 30% da largura do container(div pai) */
+    background: #fff;
+    border: 10px solid #ddd;
+    padding: 20px; 
+    /* Espaçamento interno para afastar o conteudo da borda */
+    margin-bottom: 20px;
+
+    /* Espaçamento de baixo de cada polaroid para separar os itens */
+
+    display: flex;  
+    /* Torna o produto tambem em um conteiner flexbox, deixa mexiveu */
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fotos img{
+    width: 100%; 
+    /* Faz a imagem ocupar toda a largula do produto */
+    height: auto;
+    /* Ajusta a altura proporcionalmente para nao distorcer o mozao */
+}
+h1{
+    margin: 0;
+    text-align: center;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fotos h2{
+    margin: 0;
+    text-align: center;
+    color: #cb0d0d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
